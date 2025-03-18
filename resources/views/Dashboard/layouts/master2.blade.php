@@ -17,6 +17,7 @@
 		</div>
 		<!-- /Loader -->
 		@yield('content')
-		@include('Dashboard.layouts.footer-scripts')
+
+        @include('Dashboard.layouts.footer-scripts')
 	</body>
 </html>
