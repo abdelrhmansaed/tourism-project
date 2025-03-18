@@ -9,6 +9,8 @@ use Illuminate\Notifications\Notifiable;
 
 class Agent extends Authenticatable
 {
+    use Notifiable;
+
     protected $guarded = 'agent' ;
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
@@ -22,6 +24,8 @@ class Agent extends Authenticatable
         'name',
         'email',
         'password',
+        'age',
+        'national_id'
     ];
 
     /**
